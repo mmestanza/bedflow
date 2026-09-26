@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyboards" content="libreria, libros, revistas, cuentos, literatura, autores">
+ 
+    <title>Libreria</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body bgcolor="">
+   <main>
+     <section>
+     <h1>Contacto</h1>
+        <form>
+        <table with="100%" cellpa>
+            <tr>
+                <td with="20%" ></td>
+                <td with="60%" >
+                        <label>Nombres:</label>
+                        <input type="text" id="txt_nombre" placeholder="Ingrese Nombre" size="50"> 
+                </td>
+                <td with="60%" >
+                        <label>Apellidos:</label>
+                        <input type="text" id="txt_apellidos" placeholder="Ingrese Apellidos" size="50"> 
+                </td>
+                <td with="20%" ></td>
+            </tr>
+
+            <tr>
+                <td>
+                        <label>Nro Documento:</label>
+                        <input type="text" id="txt_docu" placeholder="Numero Documento" size="50"> 
+                </td>
+                <td>
+                        <label>Fecha Nacimiento:</label>
+                        <input type="text" id="txt_docu" placeholder="Numero Documento" size="50"> 
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Genero: </label><br>
+                    <input type="radio" name="genero" value="masculino" checked> Masculino
+                    <input type="radio" name="genero" value="femenino" checked> Femenino
+                </td>
+                <td>
+                    <label>Gusto Litearios</label><br>
+                    <input type="checkbox" name="gustoliterario" value="novelas"> Novelas
+                    <input type="checkbox" name="gustoliterario" value="novelas"> Cuentos
+                    <input type="checkbox" name="gustoliterario" value="novelas"> Revistas
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Departamento:</label><br>
+                    <select>
+                        <option value="">Seleccione Departamento </option>
+                        <option value="Lima">Lima</option>
+                        <option value="Arequipa">Arequipa</option>
+                        <option value="Trujillo">Trujillo</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div id="mimodal" popver>
+
+        </div>
+       </form>
+      <button popovertarget="mi-modal">Registrar</button>
+       <div id="mi-modal" popver>
+            <h2>registro completo</h2>
+            <p>gracias por registrarme</p>
+            <button popovertarget="mi-modal" popovertargetaction="hide">Cerrar</button>
+       </div>
+    </section>   
+        
+    <section>
+        <table>
+            <caption>Tabla de usuarios registrados</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Novela 1</td>
+                    <td>20</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Novela 2</td>
+                    <td>30</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="4" align="center">Pie de pagina</td>     
+                </tr>
+            </tfoot>
+        </table>
+     </section> 
+
+    <!--Desglosamiento-->
+    <section>
+        <table width="100%" cellspacing="15" cellpadding="15">
+            <tr>
+                <td width="33%">
+                    <details>
+                        <summary>Desglose de ventas</summary>
+                        <p align="justify">En esta sección se muestra el desglose de ventas por categoria de libros</p>
+                    </details>
+                  
+                <td width="34%">
+                    <details>
+                        <summary>Recetas</summary>
+                        <p>
+                            <b>Ingredientes:</b>    
+                            <ul>
+                                <li>Arroz</li>
+                                <li>Azucar</li>
+                                <li>Aceite</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <b>Ingredientes:</b>    
+                            <ol>
+                                <li>Arroz</li>
+                                <li>Azucar</li>
+                                <li>Aceite</li>
+                            </ol>
+                        </p>
+
+                        <p>
+                            <b>Preparacion</b>
+                            <ol>
+                                <li>
+                                    <b>Paso 1</b>
+                                    <dl>
+                                        <dt>Picar Zanahoria</dt>
+                                        <dd>
+                                            lavar la zanahoria, despues picarla
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>Paso 2:</li>
+                                <li>Paso 3:</li>
+                            </ol>
+
+                        </p>
+
+                    </details>
+                </td>
+                <td width="33%"></td>
+            </tr>
+        </table>    
+    </section>
+
+    <section>
+        <marquee>
+          <h2>Hola clientes ahora somos mas</h2>
+        </marquee>
+    </section>
+
+
+</main>
+ 
+     <footer>
+        <table width="100%" bgcolor="#000000">
+            <tr>
+                <td width="10%"></td> 
+                    <p></p>
+                </td>
+                <td width="40%"> 
+                    <h1>
+                        <font color="#ffffff">Librería BookStore</font><br>
+                    </h1>    
+                    <p>
+                        <font color="#ffffff">Tenemos los mejores libros para niños y jóvenes</font><br> 
+                        <font color="#ffffff">Dirección: Calle Principal #123</font><br> 
+                        <font color="#ffffff">Teléfono: 123-456-7890</font><br> 
+                    </p>
+                </td>
+                <td width="40%"> 
+                    <h1>
+                        <font color="#ffffff">Siguenos en Redes Sociales</font>
+                    </h1>    
+                    <p>
+                       <a href="https://www.facebook.com" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" alt= "Facebook" width="30" height="30">
+                        </a> 
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="https://www.freepnglogos.com/x-logo-twitter-transparent-logo-download-3.png" alt="Twitter" width="30" height="30">
+                        </a> 
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="https://w7.pngwing.com/pngs/16/46/png-transparent-made-in-kings-heath-instagram-facebook-female-graphy-instagram-logo-instagram-icon-text-trademark-magenta-thumbnail.png" alt="Instagram" width="30" height="30">
+                       </a> 
+                    </p>
+                </td>
+                <td width="10%"></td> 
+                    <p></p>
+                </td>
+            </tr>
+        </table>    
+    </footer>
+
+</body>
